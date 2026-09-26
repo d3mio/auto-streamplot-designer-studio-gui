@@ -1,0 +1,24 @@
+{
+    "theme": "dark",
+    "default_sources": {
+        "Kafka": {
+            "bootstrap_servers": "localhost:9092",
+            "topic": "streamplot-data"
+        },
+        "MQTT": {
+            "broker_url": "mqtt.eclipse.org",
+            "port": 1883,
+            "topic": "streamplot/data"
+        },
+        "WebSocket": {
+            "url": "ws://localhost:8080/data"
+        }
+    },
+    "widgets": {
+        "default_chart": {
+            "type": "line",
+            "title": "Live Data Stream",
+            "color": "#4285f4"
+        }
+    }
+}
